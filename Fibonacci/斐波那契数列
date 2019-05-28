@@ -1,4 +1,4 @@
-    def Fibonacci(self, n):
+    def Fibonacci(n):
         res=[0,1,1,2]
         while len(res) < n + 1:
             res.append(res[-1] + res[-2])

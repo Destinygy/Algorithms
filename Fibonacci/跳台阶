@@ -1,0 +1,6 @@
+    def jumpFloor(number):
+        #f(n)= f(n-2) + f(n-1)
+        res=[1,2]
+        while len(res) < number:
+            res.append(res[-1] + res[-2])
+        return res[number -1]
